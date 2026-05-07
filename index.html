@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lalaser land Tashkent - Акции на лазерную эпиляцию</title>
 
-    <!-- Preconnect к внешним ресурсам — ускоряет загрузку -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://connect.facebook.net">
 
-    <!-- Google Fonts через <link> вместо @import — не блокирует рендеринг -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Meta Pixel Code -->
+    
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,7 +32,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1639344120646193&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
+    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome — загружаем только нужные иконки через kit или полный CSS -->
@@ -41,7 +41,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #fffafb;
+            background-color: #fdf5f7;
             color: #4a4a4a;
             -webkit-font-smoothing: antialiased;
         }
@@ -50,15 +50,15 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* Убрал backdrop-filter — тяжёл на мобильных, заменил на простой белый фон */
+        
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
-            border: 1px solid rgba(255, 182, 193, 0.3);
+            border: 1px solid rgba(200, 96, 122, 0.3);
         }
 
         .cta-button {
-            background: linear-gradient(135deg, #ff85a1 0%, #ffb3c1 100%);
-            box-shadow: 0 10px 20px -5px rgba(255, 133, 161, 0.4);
+            background: linear-gradient(135deg, #c8607a 0%, #e896a8 100%);
+            box-shadow: 0 10px 20px -5px rgba(200, 96, 122, 0.4);
         }
 
         .old-price {
@@ -67,7 +67,7 @@
         }
 
         .badge-sale {
-            background: #ff4d6d;
+            background: #b03055;
             color: white;
             font-size: 0.65rem;
             padding: 2px 10px;
@@ -76,30 +76,43 @@
             font-weight: 700;
         }
 
-        /* will-change: transform — подсказка браузеру создать отдельный слой */
+        
         .pulse {
             animation: pulse-animation 2s infinite;
             will-change: box-shadow;
         }
 
         @keyframes pulse-animation {
-            0%   { box-shadow: 0 0 0 0px rgba(255, 133, 161, 0.4); }
-            100% { box-shadow: 0 0 0 15px rgba(255, 133, 161, 0); }
+            0%   { box-shadow: 0 0 0 0px rgba(200, 96, 122, 0.4); }
+            100% { box-shadow: 0 0 0 15px rgba(200, 96, 122, 0); }
         }
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
         .pink-gradient-border {
-            border-left: 4px solid #ff85a1;
+            border-left: 4px solid #c8607a;
         }
 
-        /* Стабилизирует размер аватарки до загрузки изображения */
+        
         .avatar-wrap {
             width: 96px;
             height: 96px;
             flex-shrink: 0;
         }
+        /* Darker rose color overrides */
+        .text-pink-400 { color: #c8607a !important; }
+        .text-pink-500 { color: #b84065 !important; }
+        .text-pink-200 { color: #e8a0b5 !important; }
+        .text-pink-300 { color: #d07090 !important; }
+        .text-pink-600 { color: #a03058 !important; }
+        .bg-pink-400 { background-color: #c8607a !important; }
+        .bg-pink-500 { background-color: #b84065 !important; }
+        .bg-pink-50 { background-color: #f8eef1 !important; }
+        .bg-pink-100 { background-color: #f0d8e0 !important; }
+        .border-pink-50 { border-color: #f0d8e0 !important; }
+        .border-pink-100 { border-color: #e5bfcb !important; }
+        .border-pink-200 { border-color: #d9a0b5 !important; }
     </style>
 </head>
 <body class="flex justify-center min-h-screen pb-28">
@@ -111,7 +124,7 @@
             <div class="avatar-wrap rounded-full p-1 bg-gradient-to-tr from-pink-400 to-pink-100 shadow-lg">
                 <!-- width/height заданы явно — предотвращает Layout Shift (CLS) -->
                 <img
-                    src="avatar.jpg"
+                    src="photo.jpg"
                     alt="lalaser land Tashkent"
                     width="88"
                     height="88"
@@ -257,7 +270,7 @@
 
         <!-- СТА Кнопка -->
         <div class="w-full text-center sticky bottom-4 z-50">
-            <a href="https://t.me/lalaser_uzb?text=Здравствуйте!%20Хочу%20записаться%20по%20акции%20на%20скидку%2060%25"
+            <a href="https://t.me/lalaser_land_tashkent?text=Здравствуйте!%20Хочу%20записаться%20по%20акции%20на%20скидку%2060%25"
                rel="noopener noreferrer"
                onclick="fbq('track', 'Lead');"
                class="cta-button pulse flex items-center justify-center w-full py-5 rounded-2xl text-white font-bold text-xl shadow-2xl transition-all active:scale-95">
